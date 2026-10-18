@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fbeef2">
+  <title>Gửi Cô · 20.10 💐</title>
+  <meta name="description" content="Thiệp 20/10 của lớp K27CLCQTKDB gửi Cô cố vấn học tập">
+  <meta property="og:title" content="Gửi Cô của chúng em 💐">
+  <meta property="og:description" content="Chúc mừng ngày Phụ nữ Việt Nam 20.10 — từ lớp K27CLCQTKDB">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23e0779c' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="satin" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#f7a9c4"/><stop offset=".55" stop-color="#e57ca1"/><stop offset="1" stop-color="#cc5d86"/>
+      </linearGradient>
+      <linearGradient id="satinDark" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#dd7299"/><stop offset="1" stop-color="#b9507a"/>
+      </linearGradient>
+      <symbol id="bow" viewBox="0 0 120 82">
+        <path fill="url(#satin)" d="M56 44C52 58 46 68 38 78L50 75 55 81C59 69 61 56 61 46Z"/>
+        <path fill="url(#satin)" d="M64 44C68 58 74 68 82 78L70 75 65 81C61 69 59 56 59 46Z"/>
+        <path fill="#b9507a" fill-opacity=".22" d="M56 44C52 58 46 68 38 78L50 75 55 81C59 69 61 56 61 46ZM64 44C68 58 74 68 82 78L70 75 65 81C61 69 59 56 59 46Z"/>
+        <path fill="url(#satin)" d="M60 38C46 16 16 6 10 24 5 40 30 52 60 42Z"/>
+        <path fill="url(#satin)" d="M60 38C74 16 104 6 110 24 115 40 90 52 60 42Z"/>
+        <path fill="#b9507a" fill-opacity=".25" d="M60 41C44 46 24 44 15 33 26 45 44 47 60 43ZM60 41C76 46 96 44 105 33 94 45 76 47 60 43Z"/>
+        <rect x="52.5" y="30" width="15" height="17" rx="6.5" fill="url(#satinDark)"/>
+        <path fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2.2" stroke-linecap="round" d="M22 22C28 17 38 18 46 23M98 22C92 17 82 18 74 23"/>
+        <ellipse cx="57" cy="34" rx="2.2" ry="1.4" fill="#fff" fill-opacity=".55"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ Hộp quà mở đầu ============ -->
+  <div class="gift" id="gift">
+    <div class="gift-panel left"></div>
+    <div class="gift-panel right"></div>
+    <div class="ribbon ribbon-v"></div>
+    <div class="ribbon ribbon-h"></div>
+    <div class="gift-tag">
+      <p class="tag-k">Gửi</p>
+      <p class="tag-name" id="tagName">Cô của chúng em</p>
+      <p class="tag-sub" id="tagSub">cố vấn học tập · lớp K27CLCQTKDB</p>
+    </div>
+    <button class="gift-bow" id="giftBow" aria-label="Mở món quà"><svg><use href="#bow"/></svg></button>
+    <p class="gift-hint">chạm vào chiếc nơ để mở quà</p>
+  </div>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas id="petals" aria-hidden="true"></canvas>
+
+  <main>
+    <!-- Bìa -->
+    <section class="cover" id="cover">
+      <header class="mast">
+        <span>Số đặc biệt · 20.10</span>
+        <span id="mastLop">K27CLCQTKDB</span>
+      </header>
+      <div class="cover-photo">
+        <span class="cover-shape"></span>
+        <div class="cover-frame"><img id="coverImg" alt="Ảnh Cô"></div>
+      </div>
+      <div class="cover-text">
+        <h1 class="cover-title rv">20<i>.</i>10</h1>
+        <p class="eyebrow rv">Chúc mừng ngày Phụ nữ Việt Nam</p>
+        <p class="cover-sub rv">Gửi <em id="coverName">Cô</em> — người luôn hết mình vì chúng em</p>
+      </div>
+      <p class="scroll-cue">cuộn xuống <span>↓</span></p>
+    </section>
+
+    <!-- Trích dẫn -->
+    <section class="quote">
+      <span class="q-mark rv" aria-hidden="true">“</span>
+      <blockquote class="rv" id="quoteText"></blockquote>
+      <p class="q-by rv" id="quoteBy"></p>
+    </section>
+
+    <!-- Những điều chúng em biết về Cô -->
+    <section class="block qualities">
+      <p class="eyebrow rv">Chân dung</p>
+      <h2 class="h2 rv">Những điều chúng em <em>luôn biết</em> về Cô</h2>
+      <ol class="q-list" id="qList"></ol>
+    </section>
+
+    <!-- Ba trang ảnh -->
+    <section class="block moments">
+      <div class="moments-head">
+        <p class="eyebrow rv">Khoảnh khắc</p>
+        <h2 class="h2 rv">Cô trong <em>mắt chúng em</em></h2>
+      </div>
+      <div id="moments"></div>
+    </section>
+
+    <!-- Album lớp -->
+    <section class="block album">
+      <p class="eyebrow rv">Album</p>
+      <h2 class="h2 rv">Những ngày <em>có Cô</em></h2>
+      <p class="lead rv">Vẫn là những tấm ảnh quen thuộc của lớp mình — lần này, chúng em muốn Cô xem thật chậm, từng tấm một.</p>
+      <div class="deck-wrap rv">
+        <div class="deck" id="deck" role="button" tabindex="0" aria-label="Xấp ảnh lớp — chạm để xem tấm tiếp theo"></div>
+        <button class="deck-zoom" id="deckZoom" aria-label="Xem ảnh lớn">⤢</button>
+      </div>
+      <div class="deck-info rv">
+        <button class="round" id="deckPrev" aria-label="Ảnh trước">‹</button>
+        <div><p class="deck-cap" id="deckCap"></p><p class="deck-count" id="deckCount"></p></div>
+        <button class="round" id="deckNext" aria-label="Ảnh sau">›</button>
+      </div>
+      <p class="hint rv">chạm hoặc vuốt để xem tấm tiếp theo</p>
+    </section>
+
+    <!-- Bó hoa lời chúc -->
+    <section class="block bouquet" id="bouquet">
+      <p class="eyebrow rv">Lời chúc</p>
+      <h2 class="h2 rv">Bó hoa 20.10 <em>của lớp</em></h2>
+      <p class="lead rv">Mỗi bông hoa là một lời chúc. Chạm để cùng cả lớp gửi tặng Cô nhé!</p>
+      <div class="bq-wrap rv"><svg id="bqSvg" viewBox="0 0 300 360" aria-hidden="true"></svg></div>
+      <p class="bq-wish" id="bqWish" aria-live="polite"></p>
+      <button class="btn" id="bqBtn">Tặng Cô một bông hoa <span id="bqCount"></span></button>
+      <ul class="bq-list" id="bqList"></ul>
+    </section>
+
+    <!-- Thư -->
+    <section class="block letter">
+      <p class="eyebrow rv">Thư của lớp</p>
+      <article class="paper rv">
+        <p class="salute" id="salute">Kính gửi Cô,</p>
+        <div id="letterBody"></div>
+        <p class="sign"><span>Thương Cô thật nhiều,</span><b id="signName"></b></p>
+      </article>
+    </section>
+
+    <!-- Kết -->
+    <section class="end" id="end">
+      <div class="end-photos rv">
+        <img src="anh/co-hoa.jpg" alt="">
+        <img src="anh/co-bia.jpg" alt="">
+        <img src="anh/co-su-kien.jpg" alt="">
+      </div>
+      <h2 class="end-title rv">Cảm ơn Cô</h2>
+      <p class="end-sub rv">vì tất cả những điều Cô đã dành cho chúng em</p>
+      <p class="end-wish rv">Chúc mừng ngày Phụ nữ Việt Nam · 20.10</p>
+      <p class="end-from rv" id="endFrom"></p>
+      <button class="btn ghost rv" id="btnTop">Xem lại từ đầu ↑</button>
+      <a class="brand" href="https://www.facebook.com/tap2me.nfckeychain/" target="_blank" rel="noopener">
+        <img src="anh/tap2me-logo.jpg" alt="" width="20" height="20">Tap2Me · Chạm để kết nối
+      </a>
+    </section>
+  </main>
+
+  <button class="music" id="music" hidden aria-label="Bật / tắt nhạc">
+    <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="music-off" aria-hidden="true">♪</span>
+  </button>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh" hidden>
+    <img id="lbImg" alt="">
+    <p id="lbCap"></p>
+    <button class="round lb-x" id="lbClose" aria-label="Đóng">✕</button>
+  </div>
+
+  <audio id="bgm" loop preload="auto"></audio>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
